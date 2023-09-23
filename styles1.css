@@ -1,0 +1,169 @@
+
+*{background-color: black;
+    font-family: 'JetBrains Mono';font-size: 22px;
+    }
+    
+    
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        background-color: rgb(0, 0, 0);
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        justify-content: space-between;
+        padding-left: 20px;
+        flex-direction: row;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+    .insta 
+    {
+
+        text-decoration: none;
+        font-size: xxx-large;
+        font-weight: bold;
+        color: white;
+    }
+    
+     nav li 
+    {   align-items: center;
+        padding: 20px;
+        justify-content: space-between;
+        display: inline-block;
+    }
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        padding:20px;
+        flex-direction: row;
+    }
+    div.quote
+    {color:rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    }
+    p.quote2 {
+        display: block;
+        font-size: 60px;
+        
+    }
+    p.AS
+    {
+        font-size: 50px;
+    }
+    @keyframes rainbow {
+        0% {
+            color: #f04dff;
+        }
+    
+        25% {
+            color: #ff4d4d;
+        }
+    
+        50% {
+            color: #ffc54d;
+        }
+    
+        75% {
+            color: #6aed76;
+        }
+    
+        100% {
+            color: #09f;
+        }
+    }
+    
+    .rainbow {
+        animation: rainbow 10s ease 0s infinite alternate none running;
+        font-size: 60px;
+    }
+    p.maker
+    {
+font-size: 40px;
+    }
+    .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+      font-size: 40px;
+}
+ul#remove {
+    list-style-type: none;
+    padding: 0;
+    
+}
+li.flex
+{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: flex-start; /* Align navigation items to the left */
+        justify-content: space-between;
+        align-items: normal;
+        flex-direction: row;
+    }
+
+    .insta {
+        font-size: 24px; /* Adjust font size for mobile */
+    }
+
+    .quote2,
+    .AS,
+    .maker,
+    .animate-character {
+        font-size: 24px; /* Adjust font size for mobile */
+    }
+}
+@media(max-width: 500px)
+{
+.navbar {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: flex-start; /* Align navigation items to the left */
+    justify-content: space-between;
+    align-items: normal;
+    flex-direction: row;
+}
+div.quote
+
+.insta {
+    font-size: 15px; /* Adjust font size for mobile */
+}
+
+.quote2
+{
+    font-size: medium;
+}
+.AS,
+.maker,
+.animate-character {
+    font-size: 15px; /* Adjust font size for mobile */
+}
+}
